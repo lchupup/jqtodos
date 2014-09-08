@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>jqtodos</title>
+</head>
+<body>
+	<div class="todos">
+		<h3 class="title">Todos</h3>
+		<div class="addcontent">
+			<input type="text" id="addtxt" placeholder="要做什么？" />
+			<input type="checkbox" id="alldone" /><p class="txt1">把所有的划为已完成</p>
+		</div>
+		<ul>
+			<li id="itemmodel">
+				<input type="checkbox" class="itemdone" />
+				<input type="text" class="itemtxt" />
+				<span class="del"><img src="./image/transparent.png" /></span>
+			</li>
+		</ul>
+		<div id="bottom">
+			<div id="bottom_left">
+				<p id="item_left">还有1个项目</p>
+			</div>
+			<div id="bottom_right">
+				<p id="item_completed">清除1个已完成项目</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
