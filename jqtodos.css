@@ -20,7 +20,7 @@ body{
 	border-radius: 0 0 5px 5px;
 }
 .title{
-	margin: 20px auto;
+	margin: 10px auto;
 	text-align: center;
 	font:36px Arial, Helvetica, sans-serif;
 	color: #333;
@@ -57,7 +57,7 @@ body{
 	padding: 18px 20px 18px 0;
 	position: relative;
 	font-size: 24px;
-	border-bottom: 1px solid #cccccc;
+	border-bottom: 1px solid #ccc;
 }
 .itemdone{
 	margin: 3px 3px 3px 4px;
@@ -74,7 +74,8 @@ body{
 	cursor: pointer;
 	width: 20px;
 	height: 20px;
-	background: url(./image/destroy.png) no-repeat;
+	overflow: hidden;
+	background: url(./image/destroy.png);
 }
 .item_edit{
 	display:none;
