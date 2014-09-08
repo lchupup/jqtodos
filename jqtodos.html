@@ -2,22 +2,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="jqtodos.css" />
 	<title>jqtodos</title>
 </head>
 <body>
-	<div class="todos">
-		<h3 class="title">Todos</h3>
-		<div class="addcontent">
-			<input type="text" id="addtxt" placeholder="要做什么？" />
-			<input type="checkbox" id="alldone" /><p class="txt1">把所有的划为已完成</p>
+	<div id="todos">
+		<h1 class="title">Todos</h1>
+		<input type="text" id="addtxt" placeholder="添加项目、任务、事情" />
+		<div class="addcontent">		
+			<input type="checkbox" id="alldone" />
+			<label for="alldone">把所有的划为已完成</label>
+			<ul id="item_list">
+				<li>
+					<div class="item_manage">
+						<input type="checkbox" class="itemdone" />
+						<label>第一个项目</label>
+						<span class="del"><img src="./image/transparent.png" /></span>
+					</div>
+					<input type="text" class="item_edit" value="第一个项目" />
+				</li>
+			</ul>
 		</div>
-		<ul>
-			<li id="itemmodel">
-				<input type="checkbox" class="itemdone" />
-				<input type="text" class="itemtxt" />
-				<span class="del"><img src="./image/transparent.png" /></span>
-			</li>
-		</ul>
 		<div id="bottom">
 			<div id="bottom_left">
 				<p id="item_left">还有1个项目</p>
