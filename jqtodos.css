@@ -62,10 +62,6 @@ body{
 .itemdone{
 	margin: 3px 3px 3px 4px;
 }
-/*.item_manage label{
-	color: #777;
-	text-decoration: line-through;
-}*/
 .del{
 	position: absolute;
 	right: 5px;
@@ -133,3 +129,6 @@ body{
 	-o-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
 	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
 }
+#bottom_right:hover{
+	background: rgba(0, 0, 0, 0.15);
+};
