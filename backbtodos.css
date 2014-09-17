@@ -1,0 +1,123 @@
+*{margin: 0; padding: 0;}
+body{
+	background-color: #eee;
+	font-size: 14px;
+}
+#todos{
+	width: 480px;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: #FFF;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;-o-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+	-webkit-border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-ms-border-radius: 0 0 5px 5px;-o-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px;
+}
+.title{
+	margin: 10px auto;
+	text-align: center;
+	font:36px Arial, Helvetica, sans-serif;
+	color: #333;
+	font-weight: 900;
+}
+#addtxt{
+	width: 466px;
+	margin: 2px 0;
+	font-size: 24px;
+	font-family: inherit;
+	line-height: 1.4em;
+	outline: none;
+	padding: 6px;
+	border: 1px solid #999999;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+#alldone{
+	margin: 3px 3px 3px 4px;
+	font-size: 12px;
+	font-style: normal;
+}
+#todos_list{
+	margin: 10px 0;
+	list-style: none;
+}
+#todos_list li{
+	padding: 18px 20px 18px 0;
+	position: relative;
+	font-size: 24px;
+	border-bottom: 1px solid #ccc;
+}
+#todos_list li:last-child {
+    border-bottom: none;
+}
+#todos_list li.done label {
+    color: #777777;
+    text-decoration: line-through;
+}
+.itemdone{
+	margin: 3px 3px 3px 4px;
+}
+.del{
+	position: absolute;
+	right: 5px;
+	top: 22px;
+	display: none;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	background: url(./image/destroy.png);
+}
+#todos_list li:hover .del{
+	display: block;
+}
+.del:hover{
+	background: url(./image/destroy.png) 0 -20px;
+}
+.item_edit{
+	display: none;
+	width: 466px;
+	font-size: 24px;
+	font-family: inherit;
+	line-height: 1.4em;
+	outline: none;
+	padding: 6px;
+	border: 1px solid #999999;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;-o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+#todos_list li.editing{
+	border-bottom: none;
+}
+#todos_list li.editing.item_manage{
+	display: none;
+}
+#todos_list li.editing.item_edit{
+	display: block;
+}
+#list_status{
+	margin: 0 -20px -20px -20px;
+	overflow: hidden;
+	color: #555;
+	background: #f4fce8;
+	border-top: 1px solid #ededed;
+	padding: 0 20px;
+	line-height: 37px;
+	-webkit-border-radius: 0 0 5px 5px;-moz-border-radius: 0 0 5px 5px;-ms-border-radius: 0 0 5px 5px;-o-border-radius: 0 0 5px 5px;border-radius: 0 0 5px 5px;
+}
+#bottom_left{
+	float: left;
+}
+#bottom_right{
+	float: right;
+	line-height: 20px;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.1);
+	color: #555555;
+	font-size: 11px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding: 0 10px 1px;
+	cursor: pointer;
+	-webkit-border-radius: 12px;-moz-border-radius: 12px;-ms-border-radius: 12px;-o-border-radius: 12px;border-radius: 12px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;-o-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+}
+#bottom_right:hover{
+	background: rgba(0, 0, 0, 0.15);
+}
